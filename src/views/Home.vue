@@ -1,7 +1,7 @@
 <template>
-  <div v-if="!loggedIn" class="home">
+  <div class="home">
     <h1>Welcome to the App!</h1>
-    <div>
+    <div v-if="!loggedIn">
       To use this app, you'll need to
       <router-link to="login">
         Login
