@@ -82,7 +82,7 @@ app.post('/login', (req, res) => {
       name: userInfo.name
     })
   } else {
-    res.sendStatus(400)
+    res.status(401).json({ error: 'Invalid login. Please try again.' }) // send error if credentials don't match record
   }
 })
 
