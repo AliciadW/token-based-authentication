@@ -15,5 +15,12 @@
 </template>
 
 <script>
-export default {}
+import { authComputed } from '../vuex/helpers.js'
+
+export default {
+  name: 'Home',
+  computed: {
+    ...authComputed
+  }
+}
 </script>
