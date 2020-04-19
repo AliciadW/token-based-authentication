@@ -22,6 +22,11 @@ export default {
   name: 'AppNav',
   computed: {
     ...authComputed
+  },
+  methods: {
+    logout() {
+      console.log('Logged out')
+    }
   }
 }
 </script>
